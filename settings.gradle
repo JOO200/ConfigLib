@@ -5,4 +5,6 @@ include 'ConfigLib-Bukkit'
 findProject(':ConfigLib-Bukkit')?.name = 'configlib-bukkit'
 include 'ConfigLib-Bungee'
 findProject(':ConfigLib-Bungee')?.name = 'configlib-bungee'
+include 'ConfigLib-Forge'
+findProject(':ConfigLib-Forge')?.name = 'configlib-forge'
 

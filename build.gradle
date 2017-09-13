@@ -41,3 +41,17 @@ project(':configlib-bungee') {
     }
     jar { from { project(':configlib-core').sourceSets.main.output } }
 }
+project(':configlib-forge') {
+    buildscript {
+        repositories {
+            maven { url = "http://files.minecraftforge.net/maven" }
+        }
+        dependencies {
+            classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        }
+    }
+    dependencies {
+        compile project(':configlib-core')
+    }
+    jar { from { project(':configlib-core').sourceSets.main.output } }
+}
